@@ -71,7 +71,7 @@ class App(tk.Tk):
     # ------------------------------------------
     def get_weather(self, event):
         location = self.location.get()
-        key = '' # sign up to get byour own api key
+        key = '' # sign up to get your own api key
         api = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid={key}'
         json_data = requests.get(api).json()
 
